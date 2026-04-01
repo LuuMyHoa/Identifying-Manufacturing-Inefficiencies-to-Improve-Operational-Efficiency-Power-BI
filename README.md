@@ -96,9 +96,9 @@ This project analyzes manufacturing performance in a bicycle production company 
 #### Scrap Analysis
 ![dashboard_page4](PICTURE/dashboard_page4.png)
 #### Work Order Detail
-![dashboard_page5](.png)
+![dashboard_page5](PICTURE/dashboard_page5.png)
 
-![dashboard_page6](.png)
+![dashboard_page6](PICTURE/dashboard_page6.png)
 
 ## 🔎 Final Conclusion & Recommendations  
 
