@@ -63,7 +63,7 @@ This project analyzes manufacturing performance in a bicycle production company 
 
 ### Data Relationships
 
-![Data Modeling](.png)
+![Data Modeling]()
 
 ## 🧠 Design Thinking Process  
 
@@ -79,9 +79,8 @@ This project analyzes manufacturing performance in a bicycle production company 
 
 ## 📊 Key Insights & Visualizations  
 
-
 #### Production Overview
-![dashboard_page1](.png)
+![dashboard_page1](Project3_HoaLuu_ver3-trang-1.pdf)
 
 📌 Analysis 1:  
 - Observation: _Describe trends, key metrics, and patterns. Any insights from those observation_  
@@ -90,16 +89,9 @@ This project analyzes manufacturing performance in a bicycle production company 
 #### Delivery Performance
 ![dashboard_page2](.png)
 
-📌 Analysis 2:   
-- Observation: _Describe trends, key metrics, and patterns. Any insights from those observation_  
-- Recommendation: _Suggest actions based on insights._  
-
 #### Operation Efficiency
 ![dashboard_page3](.png)
 
-📌 Analysis 3:  
-- Observation: _Describe trends, key metrics, and patterns. Any insights from those observation_  
-- Recommendation: _Suggest actions based on insights._  
 
 #### Scrap Analysis
 ![dashboard_page4](.png)
