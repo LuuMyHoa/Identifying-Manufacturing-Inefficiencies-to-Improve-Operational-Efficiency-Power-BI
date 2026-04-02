@@ -1,6 +1,6 @@
 # Identifying Manufacturing Inefficiencies to Improve Operational Efficiency | Power BI
 
-![banner](.png)
+![banner](PICTURE/banner.png)
 
 ## Table of Contents  
 1. [📌 Background & Overview](#-background--overview)  
