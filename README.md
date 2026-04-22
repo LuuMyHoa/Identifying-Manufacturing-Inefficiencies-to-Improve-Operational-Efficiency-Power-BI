@@ -5,16 +5,16 @@
 ## Table of Contents  
 1. [📌 Background & Overview](#-background--overview)  
 2. [📂 Dataset Description & Data Structure](#-dataset-description--data-structure)  
-3. [🧠 Design Thinking Process](#-design-thinking-process)  
-4. [💡 Key Insights & Visualizations](#-key-insights--visualizations)  
-5. [🔎 Final Conclusion & Recommendations](#-final-conclusion--recommendations)
+3. [💡 Key Insights & Visualizations](#-key-insights--visualizations)  
+4. [🔎 Final Conclusion & Recommendations](#-final-conclusion--recommendations)
 
 ## 📌 Background & Overview  
 
 ### What is this project about? 
-This project analyzes manufacturing performance in a bicycle production company using Power BI.
 
-🔥 The business is currently facing two major challenges:
+This project analyzes **manufacturing performance** in a bicycle production company using **Power BI**.
+
+🔥 The business is currently facing two critical challenges:
 
 - **Production delays:**  The Work Order On-time Rate has been declining over time, while actual production duration consistently exceeds planned schedules.
 
@@ -65,23 +65,13 @@ This project analyzes manufacturing performance in a bicycle production company 
 
 ![Data Modeling](PICTURE/modeling.png)
 
-## 🧠 Design Thinking Process  
-
-1️⃣ Empathize  
-2️⃣ Define point of view  
-3️⃣ Ideate  
-4️⃣ Prototype and review  
-<details>
-<summary>Click to toggle</summary>
-🧠 
-</details>
 
 ## 💡 Key Insights & Visualizations  
 
 #### I. Production Overview
 ![dashboard_page1](PICTURE/dashboard_page1.png)
-
-📌 Key Insights:   
+  
+📌 **Key Findings:**  
 
 1. Overall KPIs show a capacity problem  
 - WO On-time Rate (~67 % in 2013) is below target (70%) and is decreasing (~4.9% YoY)
@@ -111,7 +101,7 @@ This project analyzes manufacturing performance in a bicycle production company 
 #### II. Delivery Performance
 ![dashboard_page2](PICTURE/dashboard_page2.png)
 
-📌 Key Insights:   
+📌 **Key Findings:**   
 
 1. Delays only happen in Work Orders with routing
 - Two types of Work : WO with Routing & WO no Routing
@@ -142,7 +132,7 @@ This project analyzes manufacturing performance in a bicycle production company 
 #### III. Operation Efficiency
 ![dashboard_page3](PICTURE/dashboard_page3.png)
 
-📌 Key Insights:   
+📌 **Key Findings:**  
 1. Operation-level performance
 - Work Orders with routing involve multiple operational steps
 - There are 7 operations across 7 locations
@@ -172,7 +162,7 @@ This project analyzes manufacturing performance in a bicycle production company 
 #### IV. Scrap Analysis
 ![dashboard_page4](PICTURE/dashboard_page4.png)
 
-📌 Key Insights:   
+📌 **Key Findings:**  
 1. Scrap vs Production growth in 2013
 - Scrap Quantity increased ~85.6% YoY
 - Production Quantity increased ~46.4% YoY
@@ -210,17 +200,17 @@ This project analyzes manufacturing performance in a bicycle production company 
 
 ## 🔎 Final Conclusion & Recommendations 
 
-The analysis shows that the factory is facing a structural performance problem, not a temporary issue.
+The analysis shows that the factory is facing a **structural performance problem**, not a temporary issue.
 
 Despite increasing production volume, both delivery performance and product quality are getting worse.
 
-| **Problem**                | **Impact**                          | **Priority**        | **Recommendations**                     |
-| ------------------------ | ------------------------------ | -------------------- | ------------------------------------|
-| Capacity overload (Too many Work Orders)     | On-time Rate drops as volume increases → system becomes unstable under peak load |  High          | - Implement capacity-based planning (cap WOs per period) <br> - Introduce order prioritization logic (urgent / high-margin first) <br> - Align sales forecast with production capacity |
-| Fixed planning duration (11 days for all WOs) | Unrealistic schedule → systematic delays across almost all orders                |  High | - Replace fixed duration with dynamic estimation model (based on product, routing steps) <br> - Use historical lead time data to improve accuracy     |
-| High WOs with routing      | Multi-step WOs are more delays → reduce overall On-time Rate       |  High                 | - Simplify routing by removing non-value-added steps <br> - Modularize production (split large WOs) <br> - Standardize best-performing routing patterns     |
-| Bottleneck at Step 6 (Subassembly)  | Congestion point → delays propagate across entire production flow         |  Critical        | - Increase capacity (machine / labor / shift) at Step 6 <br> - Rebalance workload upstream/downstream <br> - Track queue time before Step 6 (key hidden KPI)      |
-| Low operation efficiency (across steps)      | Persistent inefficiency → system fails to improve over time                      |  Medium              | - Track and build operation-level KPI (cycle time, wait time) <br> - Optimize handoff between steps<br> - Reduce idle time (focus on waiting, not processing) |
-| Increasing Scrap Rate | Higher cost + rework → impacts both margin and delivery       |  Medium            | - Apply Pareto analysis on scrap reasons <br> - Shift quality checks earlier in process <br> - Improve operator training for high-error steps  |
-| High scrap in no-routing WOs                  | Faster production but poor quality → inefficient trade-off                       |  Medium               | - Define minimum quality standards even for simple WOs <br> - Introduce lightweight QC checkpoints  |
-| Data issue (Unclassified Products)           | Reduces analytical accuracy and may lead to misleading insights → affects decision-making quality                    | Quick Win | - Perform one-time data cleanup (manual + rule-based mapping) <br> - Establish data governance process to prevent recurrence        |
+| **Problem** | **Impact** | **Priority** | **Recommendations** |
+|------------|-----------|-------------|---------------------|
+| Capacity overload (Too many Work Orders) | On-time Rate drops as volume increases → system becomes unstable under peak load | 🔴 **High** | - Implement capacity-based planning (cap WOs per period) <br> - Introduce order prioritization logic (urgent / high-margin first) <br> - Align sales forecast with production capacity |
+| Fixed planning duration (11 days for all WOs) | Unrealistic schedule → systematic delays across almost all orders | 🔴 **High** | - Replace fixed duration with dynamic estimation model (based on product, routing steps) <br> - Use historical lead time data to improve accuracy |
+| High WOs with routing | Multi-step WOs are more delays → reduce overall On-time Rate | 🔴 **High** | - Simplify routing by removing non-value-added steps <br> - Modularize production (split large WOs) <br> - Standardize best-performing routing patterns |
+| Bottleneck at Step 6 (Subassembly) | Congestion point → delays propagate across entire production flow | 🔴🔥 **Critical** | - Increase capacity (machine / labor / shift) at Step 6 <br> - Rebalance workload upstream/downstream <br> - Track queue time before Step 6 (key hidden KPI) |
+| Low operation efficiency (across steps) | Persistent inefficiency → system fails to improve over time | 🟡 **Medium** | - Track and build operation-level KPI (cycle time, wait time) <br> - Optimize handoff between steps <br> - Reduce idle time (focus on waiting, not processing) |
+| Increasing Scrap Rate | Higher cost + rework → impacts both margin and delivery | 🟡 **Medium** | - Apply Pareto analysis on scrap reasons <br> - Shift quality checks earlier in process <br> - Improve operator training for high-error steps |
+| High scrap in no-routing WOs | Faster production but poor quality → inefficient trade-off | 🟡 **Medium** | - Define minimum quality standards even for simple WOs <br> - Introduce lightweight QC checkpoints |
+| Data issue (Unclassified Products) | Reduces analytical accuracy → affects decision-making quality | 🟢 **Quick Win** | - Perform one-time data cleanup (manual + rule-based mapping) <br> - Establish data governance process to prevent recurrence |
