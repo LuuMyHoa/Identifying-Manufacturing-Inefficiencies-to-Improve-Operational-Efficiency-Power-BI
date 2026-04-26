@@ -68,7 +68,9 @@ This project analyzes **manufacturing performance** in a bicycle production comp
 
 ## 💡 Key Insights & Visualizations  
 
-#### I. Production Overview
+[Explore the Interactive Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYjhmOGExZjctMTkzZC00M2ExLWFmNTEtMmNkYjNkMDlhNzFiIiwidCI6IjVhZDNlY2RjLTdkNjItNDVlMS04Yjg3LTAyNzU2YzQyZWRkMSIsImMiOjEwfQ%3D%3D)
+
+### I. Production Overview
 ![dashboard_page1](PICTURE/dashboard_page1.png)
   
 📌 **Key Findings:**  
@@ -98,7 +100,7 @@ This project analyzes **manufacturing performance** in a bicycle production comp
   
 &nbsp; **Insight**: This is unrealistic because different products have different complexity → Poor planning is a root cause of delays
 
-#### II. Delivery Performance
+### II. Delivery Performance
 ![dashboard_page2](PICTURE/dashboard_page2.png)
 
 📌 **Key Findings:**   
@@ -129,7 +131,7 @@ This project analyzes **manufacturing performance** in a bicycle production comp
   
 &nbsp; **Insight**: Performance is not equal across products → Need to focus on high-risk products
 
-#### III. Operation Efficiency
+### III. Operation Efficiency
 ![dashboard_page3](PICTURE/dashboard_page3.png)
 
 📌 **Key Findings:**  
@@ -159,7 +161,7 @@ This project analyzes **manufacturing performance** in a bicycle production comp
 
 &nbsp; **Insight**: The system is consistently inefficient, not improving over time
 
-#### IV. Scrap Analysis
+### IV. Scrap Analysis
 ![dashboard_page4](PICTURE/dashboard_page4.png)
 
 📌 **Key Findings:**  
@@ -193,7 +195,7 @@ This project analyzes **manufacturing performance** in a bicycle production comp
   
 &nbsp; **Insight**: Possible data issue or poor product classification → Need data cleaning or better categorization
 
-#### V. Work Order Detail
+### V. Work Order Detail
 ![dashboard_page5](PICTURE/dashboard_page5.png)
 
 ![dashboard_page6](PICTURE/dashboard_page6.png)
